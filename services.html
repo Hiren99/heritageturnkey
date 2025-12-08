@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Contact | Heritage Turnkey</title>
+    <link rel="stylesheet" href="css/styles.css" />
+     <CHANGE> Contact form with reCAPTCHA v3 + EmailJS (client-only) 
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-mark">HT</span><span class="brand-text">Heritage Turnkey</span></a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav"><span class="sr-only">Toggle navigation</span>☰</button>
+        <nav id="primary-nav" class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a class="btn btn-primary" href="get-quote.html">Get Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="page">
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="h1">Contact Us</h1>
+          <p class="lead">Let’s discuss your space.</p>
+        </div>
+      </section>
+
+      <section class="container form-section">
+        <form id="contactForm" class="form" novalidate data-recaptcha-site-key="YOUR_RECAPTCHA_SITE_KEY" data-emailjs-public-key="YOUR_EMAILJS_PUBLIC_KEY" data-emailjs-service-id="YOUR_EMAILJS_SERVICE_ID" data-emailjs-template-id="YOUR_EMAILJS_TEMPLATE_ID">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" required autocomplete="name" />
+            <div class="error" data-for="name"></div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+            <div class="error" data-for="email"></div>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" />
+            <div class="error" data-for="phone"></div>
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <div class="error" data-for="message"></div>
+          </div>
+
+          <input type="hidden" id="recaptchaToken" name="g-recaptcha-response" />
+
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <p id="contactStatus" role="status" class="status muted"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-sm"><span class="brand-mark">HT</span><span class="brand-text">Heritage Turnkey</span></div>
+          <p class="muted">Heritage-built interiors, modern performance.</p>
+        </div>
+        <nav aria-label="Footer">
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="projects.html">Projects</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a href="get-quote.html">Get Quote</a>
+        </nav>
+      </div>
+      <div class="container copyright">
+        <small>© <span id="year"></span> Heritage Turnkey. All rights reserved.</small>
+      </div>
+    </footer>
+
+     Google reCAPTCHA v3 
+    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
+     EmailJS SDK 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/forms.js"></script>
+  </body>
+</html>

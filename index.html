@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design | Luxury Home Interiors</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/FA.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+    <!-- HEADER SECTION -->
+    <header class="header-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand brand-logo" href="#home">
+                            <span class="logo-text"><img src="images/logo.png" alt="logo" class="img-fluid"></span>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto nav-links custom-navbar">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <!-- right side -->
+                        <div class="cd-rightside">
+                            <!-- sidebar -->
+                            <button class="btn" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fa-light fa-grid fa-lg"></i>
+                            </button>
+                            <!-- serch -->
+                            <button id="openSearch" class="cd-headerserch"><i
+                                    class="fa-regular fa-magnifying-glass fa-lg"></i></button>
+                            <!-- Full Body Search Overlay -->
+                            <div id="searchOverlay" class="search-overlay">
+                                <div class="search-box">
+                                    <div class="cd-inputserch">
+                                        <button class="cd-click"><i
+                                                class="fa-regular fa-magnifying-glass fa-lg cd-serchicon"></i></button>
+                                        <input type="text" placeholder="Search..." id="searchInput" />
+                                    </div>
+                                    <button id="closeSearch" class="cd-closeicon"><i
+                                            class="fa-solid fa-xmark fa-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">...</div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="images/silder/s1.jpg" class="cd-slider" alt="Slide" />
+                <div class="slide-content-container">
+                    <div class="slide-text">
+                        <h2>Welcome to Our Site</h2>
+                        <p>Discover amazing projects and services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="images/silder/s2.jpg" class="cd-slider" alt="Slide" />
+                <div class="slide-content-container">
+                    <div class="slide-text">
+                        <h2>Creative Solutions</h2>
+                        <p>We bring your ideas to life with innovation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cd-controls">
+            <div class="slider-controls">
+                <span class="prev"><i class="fa-regular fa-circle-arrow-left fa-lg"></i></span>
+                <span class="next"><i class="fa-regular fa-circle-arrow-right fa-lg"></i></span>
+            </div>
+            <div class="slider-dots"></div>
+        </div>
+    </section>
+
+
+    <!-- FEATURED SECTION -->
+    <section class="about-section">
+        <div class="about-container">
+            <!-- Left Images -->
+            <div class="about-images">
+                <div class="circle-img circle-one">
+                    <img src="images/about-r1.jpg" class="img-fluid" alt="Interior Image 1">
+                </div>
+                <div class="circle-img circle-two">
+                    <img src="images/about-r2.jpg" class="img-fluid" alt="Interior Image 2">
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="about-content">
+                <h5 class="sub-title">ABOUT US</h5>
+                <h2 class="title">Welcome to Heritage Turnkey Contracting</h2>
+                <p>Transform your spaces with Heritage Turnkey Contracting — where elegance meets precision. As a premier renovation company, we specialize in delivering top-tier renovation services with a commitment to quality, innovation, and timeless design. Whether you’re looking to revamp your home, refresh your office, or create a brand-new atmosphere, our team brings a seamless approach to each project, crafting interiors that are both functional and sophisticated.</p>
+                <a href="#" class="cd-Morebtn">More About Us</a>
+            </div>
+
+        </div>
+    </section>
+
+    
+
+    <!-- JS -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
