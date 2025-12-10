@@ -5,6 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interior Design | Luxury Home Interiors</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/FA.min.css" />
@@ -120,8 +139,10 @@
 
             <!-- Right Content -->
             <div class="about-content">
-                <h5 class="sub-title">ABOUT US</h5>
-                <h2 class="title">Welcome to Heritage Turnkey Contracting</h2>
+                <div class="section-title">
+                    <h5 class="heading-subtitle">ABOUT US</h5>
+                    <h2 class="title">Welcome to Heritage Turnkey Contracting</h2>
+                </div>
                 <p>Transform your spaces with Heritage Turnkey Contracting — where elegance meets precision. As a premier renovation company, we specialize in delivering top-tier renovation services with a commitment to quality, innovation, and timeless design. Whether you’re looking to revamp your home, refresh your office, or create a brand-new atmosphere, our team brings a seamless approach to each project, crafting interiors that are both functional and sophisticated.</p>
                 <a href="#" class="cd-Morebtn">More About Us</a>
             </div>
@@ -129,13 +150,504 @@
         </div>
     </section>
 
+    <!-- Our Services -->
+    <section class="cd-services">
+        <div class="cd-slider-shell" id="peekSlider">
+            <div class="slider-header">
+                <div class="section-title">
+                    <h2 class="titleh2">Our Services</h2>
+                </div>
+                <div class="slider-header-controls">
+                    <button class="arrow-btn" data-dir="prev" aria-label="Previous slide"><i class="fa-regular fa-angles-left"></i></button>
+                    <button class="arrow-btn" data-dir="next" aria-label="Next slide"><i class="fa-regular fa-angles-right"></i></button>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="slider-inner">
+                    <div class="slider-track">
+                        <!-- ORIGINAL SLIDES: JS clones first/last for looping -->
+
+                        <article class="slide blue">
+                            <span class="slide-image"><img src="images/our-services/s1.jpg" class="img-fluid" alt="services"/></span>
+                            <div class="slide-footer">
+                                <a class="slide-link" href="#">
+                                    <div class="cd-title">
+                                        <h3 class="slide-title">Complete Renovations:</h3>
+                                        <span class="slide-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right fa-lg"></i></span>
+                                    </div>
+                                    <p class="">From concept to completion, we handle every aspect of your renovation to bring your vision to life.</p>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide purple">
+                            <span class="slide-image"><img src="images/our-services/s2.jpg" class="img-fluid" alt="services"/></span>
+                            <div class="slide-footer">
+                                <a class="slide-link" href="#">
+                                    <div class="cd-title">
+                                        <h3 class="slide-title">Elegant Interior Design:</h3>
+                                        <span class="slide-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right fa-lg"></i></span>
+                                    </div>
+                                    <p class="">Experience craftsmanship at its finest with our bespoke finishes, designed to add an exclusive touch to every room.</p>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide peach">
+                            <span class="slide-image"><img src="images/our-services/s3.jpg" class="img-fluid" alt="services"/></span>
+                            <div class="slide-footer">
+                                <a class="slide-link" href="#">
+                                    <div class="cd-title">
+                                        <h3 class="slide-title">Custom Finishes & Detailing:</h3>
+                                        <span class="slide-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right fa-lg"></i></span>
+                                    </div>
+                                    <p class="">Experience craftsmanship at its finest with our bespoke finishes, designed to add an exclusive touch to every room.</p>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="slide green">
+                            <span class="slide-image"><img src="images/our-services/s4.jpg" class="img-fluid" alt="services"/></span>
+                            <div class="slide-footer">
+                                <a class="slide-link" href="#">
+                                    <div class="cd-title">
+                                        <h3 class="slide-title">Project Management:</h3>
+                                        <span class="slide-arrow" aria-hidden="true"><i class="fa-solid fa-arrow-right fa-lg"></i></span>
+                                    </div>
+                                    <p class="">With a focus on efficiency and quality control, we ensure your project is completed on time, every time.</p>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME SHOWCASE SECTION -->
+    <div class="cd-project">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section-title text-center pt-5">
+                        <h5 class="heading-subtitle">OUR</h5>
+                        <h2 class="titleh2 text-white">Projects</h2>
+                    </div>
+                    <div class="coverflow-container">
+                        <button class="cf-btn cf-prev">❮</button>
+                        <button class="cf-btn cf-next">❯</button>
+
+                        <div class="coverflow" id="coverflow">
+                            <div class="cf-slide active">
+                                <img src="images/our-services/s1.jpg" class="img-fluid" alt="project" />
+                            </div>
+                            <div class="cf-slide">
+                                <img src="images/our-services/s2.jpg" class="img-fluid" alt="project" />
+                            </div>
+                            <div class="cf-slide">
+                                <img src="images/our-services/s3.jpg" class="img-fluid" alt="project" />
+                            </div>
+                            <div class="cf-slide">
+                                <img src="images/our-services/s4.jpg" class="img-fluid" alt="project" />
+                            </div>
+                            <div class="cf-slide">
+                                <img src="images/our-services/s1.jpg" class="img-fluid" alt="project" />
+                            </div>
+                        </div>
+
+                        <div class="cf-dots" id="cfDots"></div>
+
+                        <p class="cf-caption" id="cfCaption">
+                            Stories written in shadows
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
     
+    <!-- PRODUCTS SECTION -->
+    <section class="cd-products-section">
+        <div class="container">
+            <div class="section-title text-center pb-3 pb-md-4">
+                <h5 class="heading-subtitle">OUR</h5>
+                <h2 class="titleh2">Products</h2>
+            </div>
+            <div class="row products-grid">
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/Wallpaper.jpg" class="img-fluid" alt="Wall Paper" />
+                        <div class="overlay">
+                            <h3>Wall Paper</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/hard-wood.jpg" class="img-fluid" alt="Hard Wood" />
+                        <div class="overlay">
+                            <h3>Hard Wood</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/Curtains.jpg" class="img-fluid" alt="Curtains" />
+                        <div class="overlay">
+                            <h3>Curtains</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/carpets.jpg" class="img-fluid" alt="Carpets" />
+                        <div class="overlay">
+                            <h3>Carpets</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/Parquet-Flooring.jpg" class="img-fluid" alt="Parquet Flooring" />
+                        <div class="overlay">
+                            <h3>Parquet Flooring</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/OFFICE-CARPETS.jpg" class="img-fluid" alt="Office Carpets" />
+                        <div class="overlay">
+                            <h3>Office Carpets</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/STAIR-CARPETS-RUNNER.jpg" class="img-fluid" alt="Stair Carpets" />
+                        <div class="overlay">
+                            <h3>Stair Carpets</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-4 col-lg-3 product-item">
+                    <div class="img-hover-box">
+                        <img src="https://artlineinteriors.ae/wp-content/uploads/2023/11/Vinyl-Flooring.jpg" class="img-fluid" alt="Vinly Flooring" />
+                        <div class="overlay">
+                            <h3>Vinly Flooring</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+    <section class="cd-testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="testimonial-container">
+                        <div class="testimonial-content">
+                            <img src="https://cdn-ildelef.nitrocdn.com/JGwHxDeYGGvECInqshubvkxGGFriFVzq/assets/images/optimized/rev-f20aba8/res.cloudinary.com/adeeanchan/image/upload/v1728075960/heritage%20turnkey/Untitled_design_16_sqe9m2.png" alt="Design Showcase" class="testimonial-image img-fluid">
+                            <h2 class="testimonial-title">Bring Your Vision to Life</h2>
+                            <p class="testimonial-text">At Heritage Turnkey Contracting, we don’t just renovate spaces; we elevate them. Partner with us to turn your renovation dreams into reality with the class and style your property deserves.</p>
+                            <ul>
+                                <li><i class="fa-regular fa-sparkles fa-lg"></i> Remarkable quality</li>
+                                <li><i class="fa-regular fa-sparkles fa-lg"></i> Superb usability</li>
+                            </ul>
+                            <a href="contact.html" class="btn-contact">Contact US</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="cd-whyChoose-section">
+        <div class="container">
+            <div class="section-title text-center pb-3 pb-md-4">
+                <h5 class="heading-subtitle">Why Choose</h5>
+                <h2 class="titleh2">Heritage Turnkey Contracting?</h2>
+            </div>
+            <div class="row g-0">
+                <div class=" col-lg-6 col-md-6 col-sm-6 info-item">
+                    <div class="single-services">
+                        <div class="services-ion">
+                            <img src="https://preview.colorlib.com/theme/calvin/assets/img/icon/services1.svg" class="img-fluid" alt="icon">
+                        </div>
+                        <div class="services-cap">
+                            <h5>Commitment to Quality</h5>
+                            <p>We use only the finest materials and proven methods to deliver results that last.</p>
+                            <a href="#" class="browse-btn">Head of design at Calvino</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 info-item">
+                    <div class="single-services">
+                        <div class="services-ion">
+                            <img src="https://preview.colorlib.com/theme/calvin/assets/img/icon/services2.svg" class="img-fluid" alt="icon">
+                        </div>
+                        <div class="services-cap">
+                            <h5>Expert Team</h5>
+                            <p>Our skilled professionals bring years of expertise to every project, offering tailored solutions to meet your needs.</p>
+                            <a href="#" class="browse-btn">Head of design at Calvino</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 info-item">
+                    <div class="single-services">
+                        <div class="services-ion">
+                            <img src="https://preview.colorlib.com/theme/calvin/assets/img/icon/services3.svg" class="img-fluid" alt="icon">
+                        </div>
+                        <div class="services-cap">
+                            <h5>Classy Interiors</h5>
+                            <p>Our design approach blends timeless elegance with contemporary trends to give you spaces that feel unique and inviting.</p>
+                            <a href="#" class="browse-btn">Head of design at Calvino</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-lg-6 col-md-6 col-sm-6 info-item">
+                    <div class="single-services">
+                        <div class="services-ion">
+                            <img src="https://preview.colorlib.com/theme/calvin/assets/img/icon/services4.svg" class="img-fluid" alt="icon">
+                        </div>
+                        <div class="services-cap">
+                            <h5>Seamless Process</h5>
+                            <p>We believe in transparency and open communication, ensuring a stress-free experience for our clients.</p>
+                            <a href="#" class="browse-btn">Head of design at Calvino</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="footer-container">
+                        <div class="footer-col">
+                            <aside><a href="index.html" class="cd-link pb-3 d-inline-block"><img src="images/logo-icon.png" class="img-fluid" alt="Logo"></a></aside>
+                            <div class="footer-section">
+                                <h4>Address</h4>
+                                <p>
+                                    <i class="fa fa-map-marker-alt me-3"></i> 503, Building 7,<br>
+                                    Bay Square, Business Bay,<br>
+                                    Dubai, United Arab Emirates
+                                </p>
+                                <div class="d-flex gap-2 pt-2">
+                                    <a class="btn btn-square" href="https://x.com/ThemerexThemes" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                                    <a class="btn btn-square" href="https://www.facebook.com/ThemeRexStudio" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square" href="https://www.instagram.com/themerex_net/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer-col">
+                            <div class="footer-section">
+                                <h4>Quick Links</h4>
+                                <ul class="social-links">
+                                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa-solid fa-caret-down fa-rotate-270"></i> Home</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html"><i class="fa-solid fa-caret-down fa-rotate-270"></i> About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="fa-solid fa-caret-down fa-rotate-270"></i> Services</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="projects.html"><i class="fa-solid fa-caret-down fa-rotate-270"></i> Projects</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fa-solid fa-caret-down fa-rotate-270"></i> Contact Us</a></li>
+                                </ul>
+                            </div>                             
+                        </div>
+
+                        <div class="footer-col">
+                            <div class="footer-section">
+                                <h4>Say Hello</h4>
+                                <p><a href="mailto:hello@heritageturnkey.com"><i class="fa fa-phone-alt me-3"></i> hello@heritageturnkey.com</a></p>
+                                <p><a href="tel:+971585792340"><i class="fa fa-envelope me-3"></i> +971 58 579 2340</a></p>
+                            </div>   
+                            <hr/>
+                            <div class="footer-section">
+                                <h4>Newsletter</h4>
+                                <form class="newsletter-form">
+                                    <input type="email" placeholder="Enter your email" required />
+                                    <button type="submit">→</button>
+                                </form>
+
+                                <label class="checkbox">
+                                    <input type="checkbox" /> I agree to the <a href="#">Privacy Policy</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <p>Heritage TurnKey © 2025. All rights reserved by RightWay Coding.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </footer>
 
     <!-- JS -->
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        /* ----- Our Services -------*/
+        (function () {
+            const shell = document.getElementById("peekSlider");
+            const track = shell.querySelector(".slider-track");
+            const btnPrev = shell.querySelector('[data-dir="prev"]');
+            const btnNext = shell.querySelector('[data-dir="next"]');
+
+            let slides = Array.from(track.children); // originals
+            const slideCount = slides.length;
+
+            // Clone first and last for infinite effect
+            const firstClone = slides[0].cloneNode(true);
+            const lastClone = slides[slides.length - 1].cloneNode(true);
+            firstClone.classList.add("clone");
+            lastClone.classList.add("clone");
+            track.insertBefore(lastClone, slides[0]);
+            track.appendChild(firstClone);
+
+            slides = Array.from(track.children); // now includes clones
+
+            let currentIndex = 1; // start at first real slide
+            let slideWidth = getSlideWidth();
+            let isAnimating = false;
+
+            function getSlideWidth() {
+                const slide = slides[0];
+                const styles = window.getComputedStyle(slide);
+                const width = slide.offsetWidth;
+                const marginRight = parseFloat(styles.marginRight || 0);
+                return width + marginRight;
+            }
+
+            function updateTrackPosition(animate = true) {
+                if (!animate) {
+                    track.style.transition = "none";
+                } else {
+                    track.style.transition = `transform var(--transition-speed) ease`;
+                }
+                const offset = -currentIndex * slideWidth;
+                track.style.transform = `translateX(${offset}px)`;
+            }
+
+            function goTo(index) {
+                if (isAnimating) return;
+                isAnimating = true;
+                currentIndex = index;
+                updateTrackPosition(true);
+            }
+
+            btnNext.addEventListener("click", () => {
+                goTo(currentIndex + 1);
+            });
+
+            btnPrev.addEventListener("click", () => {
+                goTo(currentIndex - 1);
+            });
+
+            track.addEventListener("transitionend", () => {
+                // handle looping when we hit a clone
+                if (slides[currentIndex].classList.contains("clone")) {
+                    if (currentIndex === slides.length - 1) {
+                        currentIndex = 1; // cloned first -> real first
+                    } else if (currentIndex === 0) {
+                        currentIndex = slideCount; // cloned last -> real last
+                    }
+                    updateTrackPosition(false);
+                }
+                isAnimating = false;
+            });
+
+            // keep widths correct on resize
+            window.addEventListener("resize", () => {
+                slideWidth = getSlideWidth();
+                updateTrackPosition(false);
+            });
+
+            // Simple swipe support
+            let startX = 0;
+            let isDragging = false;
+
+            track.addEventListener(
+                "touchstart",
+                (e) => {
+                    startX = e.touches[0].clientX;
+                    isDragging = true;
+                },
+                { passive: true }
+            );
+
+            track.addEventListener("touchend", (e) => {
+                if (!isDragging) return;
+                isDragging = false;
+                const endX = e.changedTouches[0].clientX;
+                const delta = endX - startX;
+                const threshold = 40;
+                if (delta > threshold) {
+                    goTo(currentIndex - 1);
+                } else if (delta < -threshold) {
+                    goTo(currentIndex + 1);
+                }
+            });
+
+            // Initial position
+            updateTrackPosition(false);
+        })();
+        /* ------ # Our Services --------*/
+    </script>
+    <script type="module">
+        // products
+        let current = 0;
+        const cfSlides = document.querySelectorAll(".cf-slide");
+        const dotsContainer = document.getElementById("cfDots");
+        const caption = document.getElementById("cfCaption");
+
+        // Create dots
+        cfSlides.forEach((_, i) => {
+            const dot = document.createElement("span");
+            dot.onclick = () => showSlide(i);
+            dotsContainer.appendChild(dot);
+        });
+
+        const dots = dotsContainer.querySelectorAll("span");
+
+        function showSlide(n) {
+            current = n;
+
+            cfSlides.forEach((slide, i) => {
+                slide.classList.remove("active", "left", "right");
+
+                if (i === n) slide.classList.add("active");
+                else if (i === n - 1) slide.classList.add("left");
+                else if (i === n + 1) slide.classList.add("right");
+            });
+
+            dots.forEach((d) => d.classList.remove("active"));
+            dots[n].classList.add("active");
+
+            caption.textContent = "Stories written in shadows";
+        }
+
+        showSlide(0);
+
+        document.querySelector(".cf-next").onclick = () => {
+            current = (current + 1) % cfSlides.length;
+            showSlide(current);
+        };
+
+        document.querySelector(".cf-prev").onclick = () => {
+            current = (current - 1 + cfSlides.length) % cfSlides.length;
+            showSlide(current);
+        };
+    </script>
 </body>
 
 </html>
